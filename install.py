@@ -154,7 +154,7 @@ def main():
     #    choice = sys.argv[1]
     #else:
     #    choice = console.input("Please enter the option number (1 or 2): ")
-    choice = 1
+    choice = '1'
     # Install PyTorch and WhisperX
     if platform.system() == 'Darwin':  # macOS do not support Nvidia CUDA
         console.print(Panel("For MacOS, installing CPU version of PyTorch...", style="cyan"))
