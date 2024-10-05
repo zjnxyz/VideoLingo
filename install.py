@@ -139,22 +139,22 @@ def main():
     install_package("requests")
     
     # User selects Whisper model
-    table = Table(title="Whisper Model Selection")
-    table.add_column("Option", style="cyan", no_wrap=True)
-    table.add_column("Model", style="magenta")
-    table.add_column("Description", style="green")
-    table.add_row("1", "whisperX 💻", "local model (can also use online model api)")
-    table.add_row("2", "whisperXapi ☁️", "online model through api only")
-    console.print(table)
+    #table = Table(title="Whisper Model Selection")
+    #table.add_column("Option", style="cyan", no_wrap=True)
+    #table.add_column("Model", style="magenta")
+    #table.add_column("Description", style="green")
+    #table.add_row("1", "whisperX 💻", "local model (can also use online model api)")
+    #table.add_row("2", "whisperXapi ☁️", "online model through api only")
+    #console.print(table)
 
-    console.print("If you're unsure about the differences between models, please see https://github.com/Huanshere/VideoLingo/")
+    #console.print("If you're unsure about the differences between models, please see https://github.com/Huanshere/VideoLingo/")
 
-    # check if the user has provided the choice as a command line argument
-    if len(sys.argv) > 1:
-        choice = sys.argv[1]
-    else:
-        choice = console.input("Please enter the option number (1 or 2): ")
-
+    ## check if the user has provided the choice as a command line argument
+    #if len(sys.argv) > 1:
+    #    choice = sys.argv[1]
+    #else:
+    #    choice = console.input("Please enter the option number (1 or 2): ")
+    choice = 1
     # Install PyTorch and WhisperX
     if platform.system() == 'Darwin':  # macOS do not support Nvidia CUDA
         console.print(Panel("For MacOS, installing CPU version of PyTorch...", style="cyan"))
